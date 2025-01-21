@@ -7,17 +7,9 @@ import java.util.concurrent.TimeUnit;
 
 public class TarefList {
 
-
     java.util.Date juDate = new Date();
-
+    
     public static void main(String[] args) throws InterruptedException {
-        //Lista de Tarefas
-        //ESTRUTURA DE UMA LISTA DE TAREFAS:
-            //MENU
-              //OPCÇÕES:
-                //- Adicionar novas tarefas à lista.
-                //- Listar todas as tarefas cadastradas.
-                //- Remover tarefas da lista.
 
         Calendar c = Calendar.getInstance();
         Date data = c.getTime();
@@ -25,9 +17,9 @@ public class TarefList {
 
         Scanner sc = new Scanner(System.in);
 
-        //VARIÁVEIS:
         ArrayList<String> tarefas = new ArrayList<>();
-            int op;
+        
+        int op;
 
         do {
             System.out.println("--------------------------------------");
@@ -73,8 +65,8 @@ public class TarefList {
                     break;
                 case 3:
                     System.out.println("ADICIONE A TAREFA DESEJADA: ");
-                    sc.nextLine(); // Consumir qualquer Enter residual no buffer
-                    String aux = sc.nextLine(); // Agora lê corretamente a tarefa completa
+                    sc.nextLine(); 
+                    String aux = sc.nextLine();
                     tarefas.add(aux);
                     System.out.println("Você adicionou uma nova tarefa! Seu total de tarefas é: " + tarefas.size());
                     break;
