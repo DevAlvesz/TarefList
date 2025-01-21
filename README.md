@@ -1,4 +1,4 @@
-# Gerenciador de Tarefas 1.o
+# Gerenciador de Tarefas 1.0
 
 Este é um programa simples em Java que permite gerenciar suas tarefas diárias de forma eficiente. O programa utiliza um menu interativo para realizar a criação, exibição e remoção de tarefas.
 
